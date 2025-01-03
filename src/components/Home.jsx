@@ -5,6 +5,7 @@ import Products from "./Home/Products";
 import Ingredients from "./Home/Ingredients";
 import UpcomingProducts from "./Home/UpcomingProducts";
 import WhyChoose from "./Home/WhyChoose";
+import Testimony from "./Testimony";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <Ingredients />
       <WhyChoose />
       <UpcomingProducts />
+      <Testimony />
     </>
   );
 }
