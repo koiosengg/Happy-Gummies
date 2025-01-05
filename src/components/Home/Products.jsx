@@ -28,7 +28,7 @@ function Products() {
               </div>
               <span>10 Reviews</span>
             </div>
-            <ProductButton toLink="/kids" />
+            <ProductButton toLink="/kids" text="Know More" />
           </div>
         </div>
         <div className="products-card">
@@ -46,7 +46,7 @@ function Products() {
               </div>
               <span>10 Reviews</span>
             </div>
-            <ProductButton toLink="/adults" />
+            <ProductButton toLink="/adults" text="Know More" />
           </div>
         </div>
       </div>
