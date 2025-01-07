@@ -33,7 +33,7 @@ function Banner() {
             and cloud-like softness in every bite
           </p>
         </div>
-        <BannerButton toLink="/#footer" />
+        <BannerButton toLink="/#footer"  text="Order Now" />
       </div>
       <Navbar />
     </div>

@@ -8,7 +8,7 @@ import ProductImgs from "./Kids/ProductImgs";
 import ProductInfo from "./Kids/ProductInfo";
 import UpcomingProducts from "./Kids/UpcomingProducts";
 import Testimony from "./Testimony";
-import Feedback from "./feedback";
+import Feedback from "./Feedback";
 
 function Kids() {
   return (
