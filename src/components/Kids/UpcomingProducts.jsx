@@ -14,7 +14,10 @@ function UpcomingProducts() {
       </div>
       <div className="products">
         <div className="products-card">
-          <img src={AdultsProduct} alt="Happy Gummies Adults Gummies" />
+          <img
+            src={AdultsProduct}
+            alt="Happy Gummies Adults Multivitamin Gummies"
+          />
           <div className="product-details">
             <h3>Adult Multivitamin Gummies</h3>
             <ProductButton toLink="/adults" text="View Product" />

@@ -6,6 +6,9 @@ import ProductAbout from "./Adults/ProductAbout";
 import ProductDescription from "./Adults/ProductDescription";
 import ProductImgs from "./Adults/ProductImgs";
 import ProductInfo from "./Adults/ProductInfo";
+import UpcomingProducts from "./Adults/UpcomingProducts";
+import Testimony from "./Testimony";
+import Feedback from "./Feedback";
 
 function Adults() {
   return (
@@ -15,10 +18,13 @@ function Adults() {
       <div className="product-container">
         <ProductMain />
         <ProductAbout />
-        {/* <ProductDescription />
+        <ProductDescription />
         <ProductImgs />
-        <ProductInfo /> */}
+        <ProductInfo />
       </div>
+      <UpcomingProducts />
+      <Testimony />
+      <Feedback />
     </>
   );
 }

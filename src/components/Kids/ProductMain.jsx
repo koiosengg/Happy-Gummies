@@ -1,5 +1,5 @@
 import React from "react";
-import ProductImg from "../../assets/Kids/Product Image.png";
+import ProductImg from "../../assets/Kids/Product Images/Product Image.png";
 import FullStar from "../../assets/Testimony/Full Star.svg";
 import HollowStar from "../../assets/Testimony/Hollow Star.svg";
 import ProductButton from "../Buttons/ProductButton";

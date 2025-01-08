@@ -1,5 +1,5 @@
 import React from "react";
-import AdultsProduct from "../../assets/Adults/Product Images/Product Image.png";
+import AdultsProduct from "../../assets/Kids/Product Images/Product Image.png";
 import AppleCider from "../../assets/Home/Upcoming Products/Apple Cider Vinegar Gummies.png";
 import MelatoninSleepAid from "../../assets/Home/Upcoming Products/Melatonin Sleep Aid.png";
 import ComingSoon from "../Buttons/ComingSoon";
@@ -14,9 +14,12 @@ function UpcomingProducts() {
       </div>
       <div className="products">
         <div className="products-card">
-          <img src={AdultsProduct} alt="Happy Gummies Adults Gummies" />
+          <img
+            src={AdultsProduct}
+            alt="Happy Gummies Kids Multivitamin Gummies"
+          />
           <div className="product-details">
-            <h3>Adult Multivitamin Gummies</h3>
+            <h3>Kids Multivitamin Gummies</h3>
             <ProductButton toLink="/adults" text="View Product" />
           </div>
         </div>
