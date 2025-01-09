@@ -157,7 +157,7 @@ header section nav a:hover {
   line-height: normal;
 }
 
-.BannerButton:hover{
+.BannerButton:hover {
   background: yellow;
 }
 
@@ -1393,9 +1393,17 @@ footer {
   color: #000;
 }
 
-.footer-up-right nav a:hover svg path {
+.footer-up-right nav a:hover .footer-map-icon path {
   stroke: #000;
   stroke-opacity: 1;
+}
+
+.footer-up-right nav a:hover .footer-phone-icon path {
+  fill: #000;
+}
+
+.footer-up-right nav a:hover .footer-mail-icon path {
+  fill: #000;
 }
 
 .footer-down {
@@ -1430,4 +1438,182 @@ footer {
 .footer-social a:hover svg path {
   stroke: #000;
   stroke-opacity: 1;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+  .mobile {
+    display: flex;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile-navbar {
+    display: flex;
+    width: 100%;
+    height: 56px;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    box-shadow: 2px 1px 6px 0px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .mobile-navbar-logo {
+    height: 32px;
+    object-fit: cover;
+  }
+
+  .mobile-navbar-button img {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+
+  .mobile-navbar-container {
+    width: 100%;
+    height: calc(100svh - 55px);
+    background: var(--White-BG, #fff);
+    position: fixed;
+    top: 56px;
+    right: 0;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 40px 20px 20px 20px;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(100%);
+    }
+  }
+
+  .activeMobileNavbar {
+    transform: translateX(0);
+    animation: slideIn 0.3s forwards;
+  }
+
+  .nonactiveMobileNavbar {
+    transform: translateX(100%);
+    animation: slideOut 0.3s forwards;
+  }
+
+  .mobile-navbar-container nav {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .mobile-navbar-container nav a {
+    text-decoration: none;
+    color: #111;
+    font-family: "Merriweather Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  /* Home */
+
+  .home-banner img {
+    display: none;
+  }
+
+  .home-banner-container {
+    padding: 0px 20px;
+  }
+
+  .home-banner-container .heading h1 {
+    text-align: center;
+    font-family: "ADLaM Display";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .home-banner-container .heading p {
+    width: 100%;
+    color: rgba(17, 17, 17, 0.8);
+    text-align: center;
+    font-family: "Merriweather Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+  }
+
+  /* Footer */
+
+  footer {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 40px;
+    padding: 48px 20px;
+    background: url("/Footer Background Mobile.png") no-repeat center center;
+    background-size: cover;
+  }
+
+  .footer-up {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .footer-up-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+  }
+
+  .footer-up-right nav a svg path {
+    stroke: #ff7346;
+  }
+
+  .footer-down {
+    flex-direction: column;
+    gap: 20px;
+  }
 }

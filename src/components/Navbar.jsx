@@ -6,7 +6,7 @@ function Navbar() {
   const location = useLocation(); // Get the current location
 
   return (
-    <header>
+    <header className="desktop">
       <section>
         <img src={Logo} alt="Happy Gummies Logo" />
         <nav>
