@@ -1,12 +1,17 @@
 import React from "react";
 import BannerBackground from "../../assets/Adults/Banner Background.png";
+import BannerBackgroundMobile from "../../assets/Adults/Banner Background Mobile.png";
 import BannerButton from "../Buttons/BannerButton";
 import Navbar from "../Navbar";
 
 function Banner() {
   return (
     <div className="kids-banner">
-      <img src={BannerBackground} className="kids-banner-background" />
+      <img src={BannerBackground} className="kids-banner-background desktop" />
+      <img
+        src={BannerBackgroundMobile}
+        className="kids-banner-background mobile"
+      />
       <div className="home-banner-container">
         <div className="heading">
           <h1>ADULTS ADORE IT !!</h1>

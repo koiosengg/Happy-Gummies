@@ -9,9 +9,10 @@ function Testimony() {
   return (
     <div className="section-container">
       <div className="heading">
-        <h2>Bite-sized Treats</h2>
+        <h2>Happy Gummy’s Happy Customers</h2>
         <p>
-          Elevate your health journey crafted with care and packed with goodness
+          Lorem ipsum dolor sit amet consectetur. Ut viverra lorem ipsum
+          ultrices ultrices amet et lacus lectus.
         </p>
       </div>
       <div className="testimony">

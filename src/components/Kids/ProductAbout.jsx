@@ -2,7 +2,7 @@ import React from "react";
 
 function ProductAbout() {
   return (
-    <div className="product-section">
+    <div className="product-section product-about-section">
       <h2>About this Item</h2>
       <ul>
         <li>

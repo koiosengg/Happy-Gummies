@@ -12,7 +12,7 @@ function WhyChoose() {
           setIsInView(true);
         }
       },
-      { threshold: 0.1 } 
+      { threshold: 0.1 }
     );
 
     if (whyChooseRef.current) {
@@ -40,19 +40,31 @@ function WhyChoose() {
       >
         <img src={Background} alt="Why Choose Background" />
         <div className="why-choose-reason why-choose-reason-1">
-          <h3>13+ Essential vitamins</h3>
+          <h3>
+            13+ Essential <br className="mobile" /> vitamins
+          </h3>
         </div>
         <div className="why-choose-reason why-choose-reason-2">
-          <h3>Strawberry , Cherry , Orange</h3>
+          <h3>
+            Strawberry ,<br className="mobile" /> Cherry , Orange
+          </h3>
         </div>
         <div className="why-choose-reason why-choose-reason-3">
-          <h3>Soft and Non - Sticky</h3>
+          <h3>
+            Soft and Non -<br className="mobile" /> Sticky
+          </h3>
         </div>
         <div className="why-choose-reason why-choose-reason-4">
-          <h3>Easy to chew and swallow</h3>
+          <h3>
+            Easy to chew
+            <br className="mobile" /> and swallow
+          </h3>
         </div>
         <div className="why-choose-reason why-choose-reason-5">
-          <h3>Supports Immune Health</h3>
+          <h3>
+            Supports <br className="mobile" />
+            Immune Health
+          </h3>
         </div>
       </div>
     </div>

@@ -17,14 +17,14 @@ function Banner() {
     <div className="kids-banner">
       <img src={BannerBackground} className="kids-banner-background" />
       <img src={BannerTopRight} className="kids-banner-top-right" />
+      <img src={Bear4} className="banner-bear-4 banner-bear" />
+      <img src={Kid4} className="banner-kid-4 banner-kid" />
       <img src={Bear1} className="banner-bear-1 banner-bear" />
       <img src={Kid1} className="banner-kid-1 banner-kid" />
       <img src={Bear2} className="banner-bear-2 banner-bear" />
       <img src={Kid2} className="banner-kid-2 banner-kid" />
       <img src={Bear3} className="banner-bear-3 banner-bear" />
       <img src={Kid3} className="banner-kid-3 banner-kid" />
-      <img src={Bear4} className="banner-bear-4 banner-bear" />
-      <img src={Kid4} className="banner-kid-4 banner-kid" />
       <div className="home-banner-container">
         <div className="heading">
           <h1>KIDS LOVE IT !!</h1>
@@ -33,7 +33,7 @@ function Banner() {
             and cloud-like softness in every bite
           </p>
         </div>
-        <BannerButton toLink="/#footer"  text="Order Now" />
+        <BannerButton toLink="/#footer" text="Order Now" />
       </div>
       <Navbar />
     </div>
