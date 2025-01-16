@@ -16,7 +16,7 @@ function Banner() {
             cloud-like softness in every bite
           </p>
         </div>
-        <BannerButton toLink="/#footer"  text="Explore" />
+        <BannerButton toLink="/#products"  text="Explore" />
       </div>
       <Navbar />
       <img src={BannerBalloon} className="home-banner-balloon-1" />

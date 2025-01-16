@@ -1,7 +1,6 @@
 import React from "react";
 import BannerBackground from "../../assets/Kids/Banner/Banner Background.png";
 import BannerTopRight from "../../assets/Kids/Banner/Banner Top Right.png";
-import BannerButton from "../Buttons/BannerButton";
 import Navbar from "../Navbar";
 import Bear1 from "../../assets/Kids/Banner/Bear 1.png";
 import Kid1 from "../../assets/Kids/Banner/Kid 1.png";
@@ -33,7 +32,9 @@ function Banner() {
             and cloud-like softness in every bite
           </p>
         </div>
-        <BannerButton toLink="/#footer" text="Order Now" />
+        <a href="https://a.co/d/bgFytcE" target="_blank" className="BannerButton">
+          <p>Order Now </p>
+        </a>
       </div>
       <Navbar />
     </div>

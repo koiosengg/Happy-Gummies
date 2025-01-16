@@ -7,7 +7,7 @@ import ProductButton from "../Buttons/ProductButton";
 
 function Products() {
   return (
-    <div className="section-container">
+    <div className="section-container" id="products">
       <div className="heading">
         <h2>Our Gummies, Your Joyful Journey</h2>
         <p>Where Health Meets Happiness in Every Bite</p>

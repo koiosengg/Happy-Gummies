@@ -20,7 +20,7 @@ function UpcomingProducts() {
           />
           <div className="product-details">
             <h3>Kids Multivitamin Gummies</h3>
-            <ProductButton toLink="/adults" text="View Product" />
+            <ProductButton toLink="/kids" text="View Product" />
           </div>
         </div>
         <div className="products-card">

@@ -2,7 +2,6 @@ import React from "react";
 import ProductImg from "../../assets/Kids/Product Images/Product Image.png";
 import FullStar from "../../assets/Testimony/Full Star.svg";
 import HollowStar from "../../assets/Testimony/Hollow Star.svg";
-import ProductButton from "../Buttons/ProductButton";
 
 function ProductMain() {
   return (
@@ -24,7 +23,9 @@ function ProductMain() {
             </div>
             <span>10 Reviews</span>
           </div>
-          <ProductButton toLink="/kids" text="Buy Now" />
+          <a href="https://a.co/d/bgFytcE" target="_blank"  className="ProductButton">
+            Buy Now
+          </a>
         </div>
         <div className="product-main-details">
           <div className="product-main-details-set">
