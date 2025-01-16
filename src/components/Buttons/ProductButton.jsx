@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function ProductButton(props) {
   return (
-    <a href={props.toLink} className="ProductButton">
+    <Link href={props.toLink} className="ProductButton">
       {props.text}
-    </a>
+    </Link>
   );
 }
 
