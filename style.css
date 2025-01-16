@@ -164,7 +164,7 @@ header section nav a:hover {
 }
 
 .BannerButton:hover {
-  background: #fe9534;
+  background: #fdd900;
 }
 
 .home-banner-balloon-1 {
@@ -174,7 +174,7 @@ header section nav a:hover {
   bottom: 10%;
   right: 5%;
   z-index: 4;
-  animation: floatBalloon 5s ease-in-out infinite;
+  animation: floatBalloon 10s ease-in-out infinite;
 }
 
 .home-banner-balloon-2 {
@@ -184,7 +184,7 @@ header section nav a:hover {
   bottom: 15%;
   left: 5%;
   z-index: 3;
-  animation: floatBalloonReverse 4s ease-in-out infinite;
+  animation: floatBalloonReverse 8s ease-in-out infinite;
 }
 
 .home-banner-balloon-3 {
@@ -194,7 +194,7 @@ header section nav a:hover {
   top: 10%;
   left: 15%;
   z-index: 2;
-  animation: floatBalloon 6s ease-in-out infinite;
+  animation: floatBalloon 12s ease-in-out infinite;
 }
 
 .home-banner-balloon-4 {
@@ -204,7 +204,7 @@ header section nav a:hover {
   top: 15%;
   right: 15%;
   z-index: 1;
-  animation: floatBalloonReverse 6s ease-in-out infinite;
+  animation: floatBalloonReverse 12s ease-in-out infinite;
 }
 
 @keyframes floatBalloon {
@@ -258,7 +258,7 @@ header section nav a:hover {
   bottom: 20%;
   right: 10%;
   z-index: 1;
-  animation: moveCloud 6s ease-in-out infinite;
+  animation: moveCloud 9s ease-in-out infinite;
 }
 
 .home-banner-cloud-2 {
@@ -268,7 +268,7 @@ header section nav a:hover {
   bottom: 25%;
   left: 5%;
   z-index: 1;
-  animation: moveCloud 8s ease-in-out infinite;
+  animation: moveCloud 11s ease-in-out infinite;
 }
 
 .home-banner-cloud-3 {
@@ -278,7 +278,7 @@ header section nav a:hover {
   top: 8%;
   left: 5%;
   z-index: 1;
-  animation: moveCloud 8s ease-in-out infinite;
+  animation: moveCloud 11s ease-in-out infinite;
 }
 
 .home-banner-cloud-4 {
@@ -288,7 +288,7 @@ header section nav a:hover {
   top: 5%;
   right: 35%;
   z-index: 1;
-  animation: moveCloud 8s ease-in-out infinite;
+  animation: moveCloud 11s ease-in-out infinite;
 }
 
 .home-banner-cloud-5 {
@@ -298,7 +298,7 @@ header section nav a:hover {
   top: 8%;
   right: 35%;
   z-index: 1;
-  animation: moveCloud 7s ease-in-out infinite;
+  animation: moveCloud 10s ease-in-out infinite;
 }
 
 .home-banner-cloud-6 {
@@ -308,7 +308,7 @@ header section nav a:hover {
   top: 15%;
   right: 15%;
   z-index: 1;
-  animation: moveCloud 6s ease-in-out infinite;
+  animation: moveCloud 9s ease-in-out infinite;
 }
 
 .home-banner-cloud-7 {
@@ -318,7 +318,7 @@ header section nav a:hover {
   top: 50%;
   left: 35%;
   z-index: 1;
-  animation: moveCloud 8s ease-in-out infinite;
+  animation: moveCloud 11s ease-in-out infinite;
 }
 
 .home-banner-cloud-8 {
@@ -328,7 +328,7 @@ header section nav a:hover {
   bottom: 10%;
   left: 20%;
   z-index: 1;
-  animation: moveCloud 6s ease-in-out infinite;
+  animation: moveCloud 9s ease-in-out infinite;
 }
 
 @keyframes moveCloud {
@@ -1064,7 +1064,7 @@ header section nav a:hover {
   overflow: hidden;
   display: inline-flex;
   align-items: center;
-  animation: marquee 10s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 
 .kids-marquee img {
