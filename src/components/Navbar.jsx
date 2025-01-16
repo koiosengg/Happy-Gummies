@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import Logo from "/logo.png";
 
 function Navbar() {
-  const location = useLocation(); // Get the current location
+  const location = useLocation(); 
 
   return (
     <header className="desktop">

@@ -21,6 +21,10 @@ header {
   box-shadow: 0px 4px 20px 0px #c2ba7c;
   backdrop-filter: blur(2px);
   z-index: 1000;
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 header section {
@@ -92,6 +96,7 @@ header section nav a:hover {
   align-items: center;
   gap: 24px;
   z-index: 5;
+  padding-bottom: 120px;
 }
 
 .home-banner-container .heading {
@@ -146,6 +151,7 @@ header section nav a:hover {
   backdrop-filter: blur(3px);
   box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.18);
   text-decoration: none;
+  transition: all 0.3s;
 }
 
 .BannerButton p {
@@ -158,7 +164,7 @@ header section nav a:hover {
 }
 
 .BannerButton:hover {
-  background: yellow;
+  background: #fe9534;
 }
 
 .home-banner-balloon-1 {

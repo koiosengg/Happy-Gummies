@@ -18,7 +18,6 @@ function Banner() {
         </div>
         <BannerButton toLink="/#products"  text="Explore" />
       </div>
-      <Navbar />
       <img src={BannerBalloon} className="home-banner-balloon-1" />
       <img src={BannerBalloon} className="home-banner-balloon-2" />
       <img src={BannerBalloon} className="home-banner-balloon-3" />

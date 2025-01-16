@@ -36,7 +36,6 @@ function Banner() {
           <p>Order Now </p>
         </a>
       </div>
-      <Navbar />
     </div>
   );
 }

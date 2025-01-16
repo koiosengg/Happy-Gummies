@@ -7,6 +7,7 @@ import Kids from "./components/Kids";
 import Adults from "./components/Adults";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <MobileNavbar />
+        <Navbar />
         <Routes>
           <Route path="/">
             <Route index element={<Home />} />
