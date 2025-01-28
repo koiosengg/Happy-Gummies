@@ -23,7 +23,11 @@ function ProductMain() {
             </div>
             <span>10 Reviews</span>
           </div>
-          <a href="https://a.co/d/bgFytcE" target="_blank"  className="ProductButton">
+          <a
+            href="https://a.co/d/bK2hzZK"
+            target="_blank"
+            className="ProductButton"
+          >
             Buy Now
           </a>
         </div>

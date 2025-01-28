@@ -19,7 +19,7 @@ function Banner() {
             and cloud-like softness in every bite
           </p>
         </div>
-        <a href="#" className="BannerButton">
+        <a href="https://a.co/d/2SsEdSw" target="_blank" className="BannerButton">
           <p>Order Now </p>
         </a>
       </div>
