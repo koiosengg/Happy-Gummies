@@ -2,6 +2,7 @@ import React from "react";
 import ProductImg from "../../assets/Adults/Product Images/Product Image.png";
 import FullStar from "../../assets/Testimony/Full Star.svg";
 import HollowStar from "../../assets/Testimony/Hollow Star.svg";
+import AddToCartButton from "../Buttons/AddToCartButton";
 
 function ProductMain() {
   return (
@@ -23,6 +24,7 @@ function ProductMain() {
             </div>
             <span>10 Reviews</span>
           </div>
+          <button className="AddToCartButton">Add to Cart</button>
           <a
             href="https://a.co/d/2SsEdSw"
             target="_blank"

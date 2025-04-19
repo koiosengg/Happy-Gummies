@@ -28,6 +28,7 @@ function Products() {
               </div>
               <span>10 Reviews</span>
             </div>
+            <button className="AddToCartButton">Add to Cart</button>
             <ProductButton toLink="/kids" text="Know More" />
           </div>
         </div>
@@ -46,6 +47,7 @@ function Products() {
               </div>
               <span>10 Reviews</span>
             </div>
+            <button className="AddToCartButton">Add to Cart</button>
             <ProductButton toLink="/adults" text="Know More" />
           </div>
         </div>
