@@ -1,16 +1,9 @@
 import React, { useState } from "react";
 import Kids from "../assets/Kids/Product Images/Product Image.png";
 import Adults from "../assets/Adults/Product Images/Product Image.png";
+import EmptyCart from "../assets/Empty Cart.png";
 
-function Cart() {
-  const [close, setClose] = useState(false);
-
-  function onClose() {
-    setClose(true);
-  }
-
-  if (close) return null;
-
+function Cart({ onClose }) {
   return (
     <div className="cart">
       <div className="cart-header">
@@ -146,6 +139,13 @@ function Cart() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="empty-cart-list">
+        <img src={EmptyCart} />
+        <section>
+          <h3>No Product</h3>
+          <p>Go find the products you like.</p>
+        </section>
       </div>
       <div className="cart-sub-total">
         <section>

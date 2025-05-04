@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import MobileNavbar from "./components/MobileNavbar";
@@ -11,13 +11,14 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
+  const [isCartOpen, setIsCartOpen] = useState(false);
   return (
     <HelmetProvider>
       <BrowserRouter>
         <ScrollToTop />
         <MobileNavbar />
-        <Navbar />
-        <Cart />
+        <Navbar onCartClick={() => setIsCartOpen(true)} />
+        {isCartOpen && <Cart onClose={() => setIsCartOpen(false)} />}
         <Routes>
           <Route path="/">
             <Route index element={<Home />} />
