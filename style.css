@@ -998,7 +998,7 @@ header section nav a:hover {
   object-fit: cover;
   position: absolute;
   left: -160px;
-  bottom: -90px;
+  bottom: -140px;
 }
 
 .banner-kid-1 {
@@ -1013,8 +1013,8 @@ header section nav a:hover {
   height: 428px;
   object-fit: cover;
   position: absolute;
-  right: 176px;
-  bottom: -20px;
+  right: 166px;
+  bottom: -40px;
 }
 
 .banner-kid-2 {
@@ -1029,8 +1029,8 @@ header section nav a:hover {
   height: 383px;
   object-fit: cover;
   position: absolute;
-  right: -66px;
-  bottom: -129px;
+  right: -50px;
+  bottom: -70px;
 }
 
 .banner-kid-3 {
@@ -1045,8 +1045,8 @@ header section nav a:hover {
   height: 289px;
   object-fit: cover;
   position: absolute;
-  left: 243px;
-  bottom: 180px;
+  left: 230px;
+  bottom: 200px;
 }
 
 .banner-kid-4 {
@@ -2182,8 +2182,8 @@ footer {
 
   .banner-bear-1 {
     height: 226px;
-    left: -55px;
-    bottom: -34px;
+    left: -50px;
+    bottom: -44px;
   }
 
   .banner-kid-1 {
@@ -2207,7 +2207,7 @@ footer {
   .banner-bear-3 {
     height: 127px;
     right: -22px;
-    bottom: -44px;
+    bottom: -24px;
   }
 
   .banner-kid-3 {
@@ -2219,7 +2219,7 @@ footer {
   .banner-bear-4 {
     height: 120px;
     left: 78px;
-    bottom: 64px;
+    bottom: 70px;
   }
 
   .banner-kid-4 {

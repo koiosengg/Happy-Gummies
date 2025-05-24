@@ -35,7 +35,7 @@ function Products() {
         <div className="products-card">
           <img src={Adults} alt="Happy Gummies Adults Product" />
           <div className="product-details">
-            <div class="sold-label-container">
+            <div className="sold-label-container">
               <p>Sold Out</p>
             </div>
             <h3>Adult Multivitamin Gummies</h3>
@@ -50,7 +50,9 @@ function Products() {
               </div>
               <span>10 Reviews</span>
             </div>
-            <button className="AddToCartButton" disabled>Add to Cart</button>
+            <button className="AddToCartButton" disabled>
+              Add to Cart
+            </button>
             <a className="ComingSoon">Out of Stock</a>
             <ProductButton toLink="/adults" text="Know More" />
           </div>

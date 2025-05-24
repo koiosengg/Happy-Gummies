@@ -27,14 +27,12 @@ function MobileNavbar() {
       <div className="mobile-navbar-button" onClick={toggleMobileNav}>
         <img
           src={Menu}
-          alt="Fourstor Mobile navbar open"
           style={{
             display: isMobileNavOpen ? "none" : hasToggled ? "block" : "",
           }}
         />
         <img
           src={MenuCancel}
-          alt="Fourstor Mobile navbar close"
           style={{
             display: isMobileNavOpen ? "block" : hasToggled ? "none" : "none",
           }}
@@ -50,9 +48,6 @@ function MobileNavbar() {
         }`}
       >
         <nav>
-          <Link to="/" onClick={toggleMobileNav}>
-            Home
-          </Link>
           <Link to="/kids" onClick={toggleMobileNav}>
             Kids
           </Link>
