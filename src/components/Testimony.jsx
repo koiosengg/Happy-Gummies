@@ -7,7 +7,7 @@ import HollowStar from "../assets/Testimony/Hollow Star.svg";
 
 function Testimony() {
   return (
-    <div className="section-container">
+    <div className="section-container" id="Reviews">
       <div className="heading">
         <h2>Happy Gummy’s Happy Customers</h2>
         <p>

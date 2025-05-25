@@ -6,7 +6,7 @@ import AddToCartButton from "../Buttons/AddToCartButton";
 
 function ProductMain() {
   return (
-    <div className="product-main">
+    <div className="product-main" id="Product">
       <div className="product-main-img">
         <img src={ProductImg} alt="Happy Gummies Kids" />
       </div>

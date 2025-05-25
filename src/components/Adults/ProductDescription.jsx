@@ -2,7 +2,7 @@ import React from "react";
 
 function ProductDescription() {
   return (
-    <div className="product-description">
+    <div className="product-description" id="Detail">
       <div className="product-section">
         <h2>Product Description</h2>
         <p>

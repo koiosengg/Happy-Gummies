@@ -1170,6 +1170,46 @@ header section nav a:hover {
     #fffbf6;
 }
 
+.product-navbar-container {
+  position: relative;
+}
+
+.product-navbar {
+  display: flex;
+  width: 100%;
+  padding: 16px 160px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  position: sticky;
+  top: 76px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(2px);
+  z-index: 1000;
+}
+
+.product-navbar a {
+  text-decoration: none;
+  color: var(--Black-black-300, #606060);
+  font-family: "Merriweather Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.product-navbar .active-product-navbar {
+  color: var(--Black-Primary, #121212);
+  font-family: "Merriweather Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-bottom: 2px solid #fdd900;
+}
+
 .product-main {
   width: 100%;
   display: flex;
@@ -2242,6 +2282,11 @@ footer {
     width: 80px;
     height: 80px;
     flex-shrink: 0;
+  }
+
+  .product-navbar {
+    top: 50px;
+    background: #fff;
   }
 
   .product-container {
