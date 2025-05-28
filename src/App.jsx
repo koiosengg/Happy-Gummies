@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Kids from "./components/Kids";
 import Adults from "./components/Adults";
 import Cart from "./components/Cart";
+import Checkout from "./components/Checkout";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -24,6 +25,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="kids" element={<Kids />} />
             <Route path="adults" element={<Adults />} />
+            <Route path="checkout" element={<Checkout />} />
             <Route path="*" element={<Home />} />
           </Route>
         </Routes>

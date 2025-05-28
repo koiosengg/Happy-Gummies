@@ -616,6 +616,7 @@ header section nav a:hover {
   line-height: normal;
   transition: all 0.3s;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .ProductButton:hover {
@@ -1741,6 +1742,376 @@ header section nav a:hover {
   align-items: center;
   justify-content: center;
   align-self: stretch;
+}
+
+/* Checkout */
+
+.checkout {
+  display: flex;
+  width: 100%;
+  padding: 80px 160px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.checkout-prev {
+  display: flex;
+  width: 21px;
+  height: 21px;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.checkout-prev svg {
+  cursor: pointer;
+}
+
+.checkout-prev svg:hover path {
+  fill: #000;
+}
+
+.checkout-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.order-summary {
+  width: 100%;
+  display: flex;
+  padding: 32px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 10px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+}
+
+.order-summary h2 {
+  color: rgba(17, 17, 17, 0.9);
+  font-family: "Merriweather Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.order-summary-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.order-summary-list-set {
+  width: 100%;
+  display: flex;
+  padding: 16px 0px 16px 16px;
+  align-items: center;
+  gap: 16px;
+  border-radius: 13px;
+  background: rgba(255, 238, 140, 0.12);
+}
+
+.order-summary-list-set img {
+  height: 70px;
+  object-fit: cover;
+}
+
+.order-summary-list-set section {
+  width: 100%;
+  display: flex;
+  padding-right: 24px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.order-summary-list-set section h3 {
+  color: rgba(17, 17, 17, 0.9);
+  font-family: "Merriweather Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.order-summary-list-set section p {
+  color: rgba(17, 17, 17, 0.9);
+  text-align: right;
+  font-family: "Merriweather Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.order-summary-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.order-summary-coupon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.order-summary-coupon h2 {
+  color: rgba(17, 17, 17, 0.6);
+  font-family: "Merriweather Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.order-summary-coupon form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.order-summary-coupon form input {
+  width: 100%;
+  height: 49px;
+  border-radius: 8px;
+  border: 1px solid #e3e3e3;
+  background: #f9f9f9;
+  padding: 8px;
+  color: rgba(17, 17, 17, 1);
+  font-family: "Merriweather Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.order-summary-coupon form button {
+  width: auto;
+  min-width: 140px;
+}
+
+.order-summary-coupon form button.green {
+  border: 1px solid #008000;
+  color: #008000;
+  cursor: default;
+}
+
+.order-summary-coupon form button.green:hover {
+  background: none;
+}
+
+.order-summary-price {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.order-summary-price-set {
+  width: 100%;
+  display: flex;
+  padding-bottom: 12px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.05);
+}
+
+.order-summary-price-set:last-child {
+  border-bottom: none;
+}
+
+.order-summary-price-set h3 {
+  color: rgba(17, 17, 17, 0.7);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Merriweather Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.order-summary-price-set p {
+  color: rgba(17, 17, 17, 0.9);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Merriweather Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.select-address {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.select-address h2 {
+  color: rgba(17, 17, 17, 0.7);
+  font-family: "Merriweather Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.select-address-options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  align-self: stretch;
+}
+
+.select-address-options-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.select-address-options-container .radio-option {
+  width: 100%;
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 7px;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.04);
+}
+
+.select-address-options-container .radio-option .info-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+}
+
+.info-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.info-section-heading section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.info-section-heading section input {
+  width: 24px;
+  height: 24px;
+}
+
+.info-section-heading section h3 {
+  color: rgba(17, 17, 17, 0.9);
+  font-family: "Merriweather Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.info-section-heading label {
+  display: flex;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background: #f2d002;
+  color: #fff;
+  font-family: "Merriweather Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.info-section-address {
+  width: 100%;
+  display: flex;
+  padding-left: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.info-section-address p {
+  width: 100%;
+  color: rgba(17, 17, 17, 0.8);
+  font-family: "Merriweather Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.edit-options {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.edit-options svg {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.add-new-address {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.add-new-address img {
+  height: 24px;
+  object-fit: cover;
+}
+
+.add-new-address p {
+  color: rgba(17, 17, 17, 0.9);
+  text-align: center;
+  font-family: "Merriweather Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* Footer */

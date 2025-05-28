@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Kids from "../assets/Kids/Product Images/Product Image.png";
 import Adults from "../assets/Adults/Product Images/Product Image.png";
 import EmptyCart from "../assets/Empty Cart.png";
@@ -153,7 +154,7 @@ function Cart({ onClose }) {
           <h2>$50</h2>
         </section>
         <div className="cart-place-order-button">
-          <button className="ProductButton">Place Order</button>
+          <Link to="/checkout" onClick={onClose} className="ProductButton">Place Order</Link>
         </div>
       </div>
     </div>
