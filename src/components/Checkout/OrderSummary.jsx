@@ -41,6 +41,10 @@ function OrderSummary() {
             <p>$00.00</p>
           </div>
           <div className="order-summary-price-set">
+            <h3>Shipping Fee</h3>
+            <p>$00.00</p>
+          </div>
+          <div className="order-summary-price-set">
             <h3>Total </h3>
             <p>$00.00</p>
           </div>
