@@ -6,7 +6,7 @@ import NewAddress from "./Checkout/NewAddress";
 import Payment from "./Checkout/Payment";
 import OrderConfirmation from "./Checkout/OrderConfirmation";
 
-function Checkout() {
+function Checkout3() {
   return (
     <>
       <div className="checkout">
@@ -45,4 +45,4 @@ function Checkout() {
   );
 }
 
-export default Checkout;
+export default Checkout3;

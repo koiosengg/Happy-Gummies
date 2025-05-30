@@ -6,7 +6,7 @@ import NewAddress from "./Checkout/NewAddress";
 import Payment from "./Checkout/Payment";
 import OrderConfirmation from "./Checkout/OrderConfirmation";
 
-function Checkout() {
+function Checkout1() {
   return (
     <>
       <div className="checkout">
@@ -35,9 +35,9 @@ function Checkout() {
         </Link>
         <div className="checkout-container">
           <OrderSummary />
-          {/* <SelectAddress /> */}
+          <SelectAddress />
           {/* <NewAddress /> */}
-          <Payment />
+          {/* <Payment /> */}
         </div>
       </div>
       {/* <OrderConfirmation /> */}
@@ -45,4 +45,4 @@ function Checkout() {
   );
 }
 
-export default Checkout;
+export default Checkout1;

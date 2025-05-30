@@ -6,10 +6,10 @@ import NewAddress from "./Checkout/NewAddress";
 import Payment from "./Checkout/Payment";
 import OrderConfirmation from "./Checkout/OrderConfirmation";
 
-function Checkout() {
+function Checkout4() {
   return (
     <>
-      <div className="checkout">
+      {/* <div className="checkout">
         <Link to="/" className="checkout-prev">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -35,14 +35,14 @@ function Checkout() {
         </Link>
         <div className="checkout-container">
           <OrderSummary />
-          {/* <SelectAddress /> */}
-          {/* <NewAddress /> */}
+          <SelectAddress />
+          <NewAddress />
           <Payment />
         </div>
-      </div>
-      {/* <OrderConfirmation /> */}
+      </div> */}
+      <OrderConfirmation />
     </>
   );
 }
 
-export default Checkout;
+export default Checkout4;
