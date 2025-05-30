@@ -2097,6 +2097,7 @@ header section nav a:hover {
   align-items: center;
   gap: 8px;
   align-self: stretch;
+  text-decoration: none;
 }
 
 .add-new-address img {
@@ -3132,6 +3133,44 @@ footer {
 
   .feedback-container .product-sub-section p {
     width: 100%;
+  }
+
+  /* Checkout */
+
+  .checkout {
+    padding: 88px 20px 140px 20px;
+    gap: 40px;
+  }
+
+  .add-new-address img {
+    width: 100%;
+    height: auto;
+  }
+
+  .checkout-container {
+    flex-direction: column;
+  }
+
+  .order-confirmation {
+    padding: 88px 20px 140px 20px;
+    gap: 40px;
+  }
+
+  .order-confirmation img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+  }
+
+  .order-confirmation h1 {
+    color: #0a0d13;
+    text-align: center;
+    font-family: "Merriweather Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 
   /* Footer */
