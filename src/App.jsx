@@ -21,7 +21,7 @@ function App() {
     <HelmetProvider>
       <BrowserRouter>
         <ScrollToTop />
-        <MobileNavbar />
+        <MobileNavbar onCartClick={() => setIsCartOpen(true)} />
         <Navbar onCartClick={() => setIsCartOpen(true)} />
         {isCartOpen && <Cart onClose={() => setIsCartOpen(false)} />}
         <Routes>

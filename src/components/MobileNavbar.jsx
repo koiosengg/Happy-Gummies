@@ -4,7 +4,7 @@ import Logo from "/logo.png";
 import Menu from "../assets/menu.png";
 import MenuCancel from "../assets/menu cancel.png";
 
-function MobileNavbar() {
+function MobileNavbar({ onCartClick }) {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [hasToggled, setHasToggled] = useState(false);
 
@@ -17,6 +17,11 @@ function MobileNavbar() {
     if (isMobileNavOpen) {
       setIsMobileNavOpen(false);
     }
+  };
+
+  const handleCartClick = () => {
+    onCartClick();
+    toggleMobileNav();
   };
 
   return (
@@ -54,6 +59,7 @@ function MobileNavbar() {
           <Link to="/adults" onClick={toggleMobileNav}>
             Adults
           </Link>
+          <a onClick={handleCartClick}>Cart</a>
         </nav>
       </div>
     </div>
