@@ -124,7 +124,7 @@ function SelectAddress() {
           <p>Add New Address</p>
         </div>
       </div>
-      <button className="ProductButton">Checkout</button>
+      <button className="ProductButton">Save & Next</button>
     </div>
   );
 }

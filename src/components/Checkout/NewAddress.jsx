@@ -104,7 +104,7 @@ function NewAddress() {
           </div>
         </div>
       </div>
-      <button className="ProductButton">Save</button>
+      <button className="ProductButton">Save & Next</button>
     </form>
   );
 }
