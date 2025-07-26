@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Img from "../../assets/Order Confirmation.png";
+import Img from "../../assets/Order Confirmation.gif";
 
 function OrderConfirmation() {
   return (

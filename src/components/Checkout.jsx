@@ -40,7 +40,7 @@ function Checkout() {
           <Payment />
         </div>
       </div>
-      {/* <OrderConfirmation /> */}
+      <OrderConfirmation />
     </>
   );
 }
