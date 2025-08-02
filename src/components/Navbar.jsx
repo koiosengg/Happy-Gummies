@@ -1,8 +1,13 @@
 import React from "react";
+import { useAuth } from "./AuthContext";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Logo from "/logo.png";
 
 function Navbar({ onCartClick }) {
+  const { token, logout } = useAuth();
+  const navigate = useNavigate();
+
   return (
     <header className="desktop">
       <section>
@@ -13,8 +18,26 @@ function Navbar({ onCartClick }) {
           <div className="navbar-links">
             <Link to="/kids">Kids</Link>
             <Link to="/adults">Adults</Link>
+            {token ? (
+              <Link
+                onClick={() => {
+                  const confirmLogout = window.confirm(
+                    "Are you sure you want to logout?"
+                  );
+                  if (confirmLogout) {
+                    logout();
+                    navigate("/");
+                    alert("Logout successful!");
+                  }
+                }}
+              >
+                Logout
+              </Link>
+            ) : (
+              <Link to="/login">Login / Register</Link>
+            )}
           </div>
-          <div className="navbar-cart-button"  onClick={onCartClick}>
+          <div className="navbar-cart-button" onClick={onCartClick}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

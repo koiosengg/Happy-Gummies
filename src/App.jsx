@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import MobileNavbar from "./components/MobileNavbar";
 import Navbar from "./components/Navbar";
+import Login from "./components/Login";
+import Register from "./components/Register";
 import Home from "./components/Home";
 import Kids from "./components/Kids";
 import Adults from "./components/Adults";
@@ -14,31 +16,72 @@ import Checkout3 from "./components/Checkout3";
 import Checkout4 from "./components/Checkout4";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import { AuthProvider } from "./components/AuthContext.jsx";
+import ProtectedRoute from "./components/ProtectedRoute.jsx";
 
 function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
   return (
     <HelmetProvider>
-      <BrowserRouter>
-        <ScrollToTop />
-        <MobileNavbar onCartClick={() => setIsCartOpen(true)} />
-        <Navbar onCartClick={() => setIsCartOpen(true)} />
-        {isCartOpen && <Cart onClose={() => setIsCartOpen(false)} />}
-        <Routes>
-          <Route path="/">
-            <Route index element={<Home />} />
-            <Route path="kids" element={<Kids />} />
-            <Route path="adults" element={<Adults />} />
-            <Route path="checkout" element={<Checkout />} />
-            <Route path="checkout1" element={<Checkout1 />} />
-            <Route path="checkout2" element={<Checkout2 />} />
-            <Route path="checkout3" element={<Checkout3 />} />
-            <Route path="checkout4" element={<Checkout4 />} />
-            <Route path="*" element={<Home />} />
-          </Route>
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <AuthProvider>
+        <BrowserRouter>
+          <ScrollToTop />
+          <MobileNavbar onCartClick={() => setIsCartOpen(true)} />
+          <Navbar onCartClick={() => setIsCartOpen(true)} />
+          {isCartOpen && <Cart onClose={() => setIsCartOpen(false)} />}
+          <Routes>
+            <Route path="/">
+              <Route index element={<Home />} />
+              <Route path="kids" element={<Kids />} />
+              <Route path="adults" element={<Adults />} />
+              <Route
+                path="checkout"
+                element={
+                  <ProtectedRoute>
+                    <Checkout />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="checkout1"
+                element={
+                  <ProtectedRoute>
+                    <Checkout1 />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="checkout2"
+                element={
+                  <ProtectedRoute>
+                    <Checkout2 />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="checkout3"
+                element={
+                  <ProtectedRoute>
+                    <Checkout3 />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="checkout4"
+                element={
+                  <ProtectedRoute>
+                    <Checkout4 />
+                  </ProtectedRoute>
+                }
+              />
+              <Route path="login" element={<Login />} />
+              <Route path="register" element={<Register />} />
+              <Route path="*" element={<Home />} />
+            </Route>
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </AuthProvider>
     </HelmetProvider>
   );
 }
