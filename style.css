@@ -2502,7 +2502,7 @@ header section nav a:hover {
   line-height: normal;
 }
 
-.login-form input:focus{
+.login-form input:focus {
   color: #111;
 }
 
@@ -3231,6 +3231,18 @@ footer {
   }
 
   .feedback-container .product-sub-section p {
+    width: 100%;
+  }
+
+  /* Login */
+
+  .login {
+    padding: 48px 20px;
+  }
+
+  .login-form-container {
+    max-width: 500px;
+    min-width: auto;
     width: 100%;
   }
 

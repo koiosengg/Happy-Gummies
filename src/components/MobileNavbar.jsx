@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "./AuthContext"; // import your auth hook
 import Logo from "/logo.png";
 import Menu from "../assets/menu.png";
 import MenuCancel from "../assets/menu cancel.png";
@@ -7,6 +8,9 @@ import MenuCancel from "../assets/menu cancel.png";
 function MobileNavbar({ onCartClick }) {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [hasToggled, setHasToggled] = useState(false);
+
+  const { token, logout } = useAuth(); // auth values
+  const navigate = useNavigate();
 
   const toggleMobileNav = () => {
     setIsMobileNavOpen(!isMobileNavOpen);
@@ -22,6 +26,16 @@ function MobileNavbar({ onCartClick }) {
   const handleCartClick = () => {
     onCartClick();
     toggleMobileNav();
+  };
+
+  const handleLogout = () => {
+    const confirmLogout = window.confirm("Are you sure you want to logout?");
+    if (confirmLogout) {
+      logout();
+      navigate("/");
+      alert("Logout successful!");
+      toggleMobileNav();
+    }
   };
 
   return (
@@ -59,6 +73,13 @@ function MobileNavbar({ onCartClick }) {
           <Link to="/adults" onClick={toggleMobileNav}>
             Adults
           </Link>
+          {token ? (
+            <a onClick={handleLogout}>Logout</a>
+          ) : (
+            <Link to="/login" onClick={toggleMobileNav}>
+              Login / Register
+            </Link>
+          )}
           <a onClick={handleCartClick}>Cart</a>
         </nav>
       </div>
