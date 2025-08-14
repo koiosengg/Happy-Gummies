@@ -53,13 +53,13 @@ function Register() {
           <path
             d="M5.33398 24C5.33398 22.5855 5.89589 21.229 6.89608 20.2288C7.89628 19.2286 9.25283 18.6667 10.6673 18.6667H21.334C22.7485 18.6667 24.105 19.2286 25.1052 20.2288C26.1054 21.229 26.6673 22.5855 26.6673 24C26.6673 24.7072 26.3864 25.3855 25.8863 25.8856C25.3862 26.3857 24.7079 26.6667 24.0007 26.6667H8.00065C7.29341 26.6667 6.61513 26.3857 6.11503 25.8856C5.61494 25.3855 5.33398 24.7072 5.33398 24Z"
             stroke="black"
-            stroke-width="2"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinejoin="round"
           />
           <path
             d="M16 13.3333C18.2091 13.3333 20 11.5425 20 9.33333C20 7.12419 18.2091 5.33333 16 5.33333C13.7909 5.33333 12 7.12419 12 9.33333C12 11.5425 13.7909 13.3333 16 13.3333Z"
             stroke="black"
-            stroke-width="2"
+            strokeWidth="2"
           />
         </svg>
         <h2>Create an account</h2>
@@ -108,6 +108,10 @@ function Register() {
         <p>
           Already have an account? <Link to="/login">Login</Link>
         </p>
+               <span>
+          We need your details to notify you of order status and shipping
+          details.
+        </span>
       </div>
     </div>
   );

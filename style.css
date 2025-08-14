@@ -2525,6 +2525,24 @@ header section nav a:hover {
   line-height: normal;
 }
 
+.login-form-container span {
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 20px;
+  background: var(--Yellow-yellow-50, #fefae6);
+  color: var(--Black-black-300, #606060);
+  text-align: center;
+  font-family: "Merriweather Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 /* Footer */
 
 footer {
@@ -2690,6 +2708,27 @@ footer {
   .mobile-navbar-logo {
     height: 32px;
     object-fit: cover;
+  }
+
+  .mobile-navbar-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+
+  .mobile-navbar-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-navbar-cart svg {
+    width: 32px;
+    flex-shrink: 0;
+    align-self: stretch;
+    aspect-ratio: 1/1;
   }
 
   .mobile-navbar-button img {
@@ -3250,7 +3289,7 @@ footer {
 
   .cart {
     width: 100%;
-    padding: 48px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
     justify-content: space-between;
   }
 

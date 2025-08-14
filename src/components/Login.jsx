@@ -72,6 +72,10 @@ function Login() {
         <p>
           Don't have an account? <Link to="/register">Register</Link>
         </p>
+        <span>
+          We need your details to notify you of order status and shipping
+          details.
+        </span>
       </div>
     </div>
   );
